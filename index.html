@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Student Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">🤖 AI Student Assistant</h1>
+                <p class="subtitle">Your intelligent learning companion</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Features Section -->
+            <section class="features">
+                <h2>What Can I Help With?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Study Materials</h3>
+                        <p>Get explanations, summaries, and study guides for any subject</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❓</div>
+                        <h3>Answer Questions</h3>
+                        <p>Ask any question and get detailed, easy-to-understand answers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✍️</div>
+                        <h3>Assignment Help</h3>
+                        <p>Get guidance on homework, essays, and projects</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Concept Clarity</h3>
+                        <p>Understand complex concepts with simple explanations</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chat Section -->
+            <section class="chat-section">
+                <h2>Chat with AI Assistant</h2>
+                
+                <div class="chat-container">
+                    <!-- Messages Display Area -->
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message assistant-message">
+                            <div class="message-content">
+                                <p>Hello! 👋 I'm your AI Student Assistant. How can I help you with your studies today?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input Area -->
+                    <div class="input-area">
+                        <div class="input-wrapper">
+                            <input 
+                                type="text" 
+                                id="userInput" 
+                                class="message-input" 
+                                placeholder="Ask me anything about your studies..."
+                                autocomplete="off"
+                            >
+                            <button class="send-btn" id="sendBtn">
+                                <span>Send</span>
+                                <span class="send-icon">➤</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="action-btn" onclick="quickAction('Explain photosynthesis')">Explain: Photosynthesis</button>
+                    <button class="action-btn" onclick="quickAction('How to solve quadratic equations?')">Quadratic Equations</button>
+                    <button class="action-btn" onclick="quickAction('World War 2 summary')">History: WW2</button>
+                    <button class="action-btn" onclick="quickAction('Tips for better study habits')">Study Tips</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 AI Student Assistant | Always here to help you learn better</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
